@@ -1,0 +1,8 @@
+*.mkv
+*_frames/
+test_predict_first_titlescreen/
+train/
+val/
+*.jpg
+*.pth
+__pycache__/
