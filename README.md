@@ -4,7 +4,7 @@ This project takes a One Piece episode and tries to find the first instance of t
 
 It is highly underdeveloped so far and I will be automating more parts of it in the future.
 
-I used ChatGPT for most all of this. Lord forgive me.
+**I used ChatGPT for most all of this. Lord forgive me.**
 
 ### How to
 
