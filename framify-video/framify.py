@@ -21,7 +21,7 @@ def extract_frames(video_path, output_folder):
         if not ret:
             break
         # Save each frame as an image file
-        frame_filename = os.path.join(output_folder, f"{os.path.splitext(video_path)[0]}frame_{frame_count:05d}.jpg")
+        frame_filename = os.path.join(output_folder, f"{os.path.splitext(video_path)[0]}_frame_{frame_count:05d}.jpg")
         cv2.imwrite(frame_filename, frame)
         frame_count += 1
     
