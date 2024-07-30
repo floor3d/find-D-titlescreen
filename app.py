@@ -1,5 +1,5 @@
 import os
-from flask import Flask, flash, request, redirect
+from flask import Flask, flash, request, redirect, render_template
 from werkzeug.utils import secure_filename
 from dotenv import load_dotenv
 
@@ -35,13 +35,4 @@ def upload_file():
             filename = secure_filename(filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             # return redirect(url_for('uploaded_file', filename=filename))
-    return '''
-    <!doctype html>
-    <title>Upload new File</title>
-    <h1>Upload new File</h1>
-    <form method=post enctype=multipart/form-data>
-      <input type=file name=file>
-      <input type=text name=filename>
-      <input type=submit value=Upload>
-    </form>
-    '''
+    return render_template("upload.html")
