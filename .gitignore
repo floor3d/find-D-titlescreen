@@ -6,3 +6,4 @@ val/
 *.jpg
 *.pth
 __pycache__/
+.env
